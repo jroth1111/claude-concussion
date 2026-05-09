@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "required_fields": [
+    "DIRECTIVE_CANDIDATES",
+    "SELECTED_DIRECTIVE",
+    "ACTIVE_CONTRACT",
+    "LAST_USER_INTENT",
+    "BD_ISSUE",
+    "OPEN_ITEMS",
+    "CURRENT_FRONTIER",
+    "LAST_VERIFIED_BOUNDARY",
+    "MODIFIED_FILES",
+    "ACTIVE_BACKGROUND_TASKS",
+    "COMPACT_SUMMARY_STATUS",
+    "EVIDENCE_CONSULTED",
+    "NEXT_ACTION",
+    "STOP_CONDITION"
+  ],
+  "field_labels": {
+    "DIRECTIVE_CANDIDATES": [
+      "latest normal user message",
+      "latest queued command",
+      "latest queued-command attachment",
+      "last-prompt record",
+      "compact summary claimed current request",
+      "post-compact user messages"
+    ],
+    "SELECTED_DIRECTIVE": [
+      "chosen directive",
+      "why it outranks other candidates",
+      "conflict/uncertainty",
+      "confidence"
+    ]
+  },
+  "field_label_aliases": {
+    "DIRECTIVE_CANDIDATES": {
+      "latest normal user message": [
+        "latest user message",
+        "normal user message",
+        "last user message"
+      ],
+      "latest queued command": [
+        "queued command",
+        "active queued command"
+      ],
+      "latest queued-command attachment": [
+        "queued-command attachment",
+        "queued command attachment",
+        "queued attachment",
+        "attachment"
+      ],
+      "last-prompt record": [
+        "last prompt record",
+        "last prompt",
+        "prompt record"
+      ],
+      "compact summary claimed current request": [
+        "compact summary claimed request",
+        "compact summary current request",
+        "compact summary request"
+      ],
+      "post-compact user messages": [
+        "post compact user messages",
+        "post compact messages",
+        "post compact user message"
+      ]
+    },
+    "SELECTED_DIRECTIVE": {
+      "chosen directive": [
+        "selected directive",
+        "directive",
+        "chosen"
+      ],
+      "why it outranks other candidates": [
+        "why it outranks",
+        "why it outranks others",
+        "why selected directive outranks other candidates",
+        "why this outranks other candidates"
+      ],
+      "conflict/uncertainty": [
+        "conflict uncertainty",
+        "conflicts uncertainty",
+        "uncertainty",
+        "conflict"
+      ],
+      "confidence": [
+        "confidence level"
+      ]
+    }
+  },
+  "semantic_label_aliases": {
+    "SELECTED_DIRECTIVE": {
+      "why it outranks other candidates": [
+        "why selected",
+        "rationale",
+        "selection rationale"
+      ]
+    }
+  },
+  "allowed_literal_values": {
+    "BD_ISSUE": [
+      "tracker_unavailable",
+      "none"
+    ],
+    "OPEN_ITEMS": [
+      "none"
+    ],
+    "LAST_VERIFIED_BOUNDARY": [
+      "none",
+      "no_verified_boundary"
+    ],
+    "MODIFIED_FILES": [
+      "none"
+    ],
+    "ACTIVE_BACKGROUND_TASKS": [
+      "none",
+      "no_active_background_tasks"
+    ],
+    "EVIDENCE_CONSULTED": [
+      "none_since_boundary"
+    ]
+  },
+  "evidence": {
+    "field": "EVIDENCE_CONSULTED",
+    "none_token": "none_since_boundary",
+    "id_pattern": "\\b(?:ev_[0-9a-f]{12}|legacy-line-[0-9]+)\\b",
+    "text_markers": [
+      "bd ",
+      "bd ready",
+      "bd list",
+      "git ",
+      "git status",
+      "git diff",
+      "git log",
+      "file read",
+      "read ",
+      "grep",
+      "rg ",
+      "wc ",
+      "sed ",
+      "test",
+      "tests",
+      "pytest",
+      "tsc",
+      "compile",
+      "verified",
+      "confirmed",
+      "direct read"
+    ]
+  },
+  "placeholder_patterns": [
+    "^\\s*$",
+    "^x$",
+    "^todo\\b",
+    "^tbd\\b",
+    "^unknown$",
+    "^n/?a$",
+    "^\\s*<[^>]+>\\s*$"
+  ],
+  "compact_summary_status_keywords": [
+    "projection",
+    "conflict",
+    "verified_against_transcript",
+    "unavailable"
+  ]
+}

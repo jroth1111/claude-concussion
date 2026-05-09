@@ -1,0 +1,149 @@
+{
+  "entries": [
+    {
+      "bytes": 1256,
+      "path": "BASELINE_DIFF.md",
+      "sha256": "51d957365f0869b1be9c60b607283f22e684067ed53769831676549c758beafb"
+    },
+    {
+      "bytes": 4147,
+      "path": "README.md",
+      "sha256": "d947c205d5b4fd5d928d9994090ac566a4ee1ac96a9b75500b85c8cf915ac8a2"
+    },
+    {
+      "bytes": 5452,
+      "path": "install.py",
+      "sha256": "1872f53cba50ed1fef5fe2102747e968d2f996dd2c75425d6bd8962d41c994dc"
+    },
+    {
+      "bytes": 4776,
+      "path": "payload/agent-control/rehydration-regression.py",
+      "sha256": "380d7535bfb0204437796f4b39651b0739813eaae9cd89af3bb5e6d7570641f8"
+    },
+    {
+      "bytes": 6788,
+      "path": "payload/agent-control/v4-regression-probe.py",
+      "sha256": "fc03ec29bb0730ffb30bfb3407901f3edd255bebea58a99ba265bd5073738d9a"
+    },
+    {
+      "bytes": 17067,
+      "path": "payload/docs/compaction.md",
+      "sha256": "d75a8d240c5ebf9fde214eb10a367fa7f330f8c2cb106f5b1a1d9ab30e683c3e"
+    },
+    {
+      "bytes": 1024,
+      "path": "payload/docs/recovery.md",
+      "sha256": "86037ece9c4f0d456f970e2ad8f996595107751b91562c31fa30c3165daa8c4d"
+    },
+    {
+      "bytes": 9367,
+      "path": "payload/docs/verification.md",
+      "sha256": "954fbfb21fbaec1118aabe97a914de7fe20506e24e2c2672f560bc94e1301a11"
+    },
+    {
+      "bytes": 6517,
+      "path": "payload/hooks/bash-safety-gate.py",
+      "sha256": "0d40299041e78f648b22b55d3b768d2a03025bf1900f946b343f64ba94a40447"
+    },
+    {
+      "bytes": 11644,
+      "path": "payload/hooks/evidence-capture.py",
+      "sha256": "d6790b21fa8da9ba13e8e8b3684ff7e98300f0bec0b0cbdc552d3b04eed6d77f"
+    },
+    {
+      "bytes": 4545,
+      "path": "payload/hooks/postcompact-capture.py",
+      "sha256": "7b2def9e29f2067acdcdaf9892f8eb9e4ddc1cfe2129c8edd89e1c7b87e5cfa1"
+    },
+    {
+      "bytes": 1334,
+      "path": "payload/hooks/posttoolbatch-reconcile.py",
+      "sha256": "686895a4da8c933c6beac1e7ff10c818108e232df3e37a9a7e84d65899209939"
+    },
+    {
+      "bytes": 14910,
+      "path": "payload/hooks/rehydration-clear-guard.py",
+      "sha256": "931c321d1ddc53ecd33898caa23a06762e8358495d37cf9b5c032e9013097f41"
+    },
+    {
+      "bytes": 10653,
+      "path": "payload/hooks/rehydration-clear.py",
+      "sha256": "e71d9e072074205421e7a8254ffead1856f5d15b3bf31f7813ceacab9e3da642"
+    },
+    {
+      "bytes": 3739,
+      "path": "payload/hooks/rehydration-schema.json",
+      "sha256": "ceb8d8a35ca41488dfefb0c79bac058cdf36989b9a31115462c721c78d4340de"
+    },
+    {
+      "bytes": 4718,
+      "path": "payload/hooks/rehydration-stop-linter.py",
+      "sha256": "23d911b5eaf1ece97f035ee7c7e13a138ca4a7ad1d6ab6ec7a422325a07ceaf3"
+    },
+    {
+      "bytes": 17836,
+      "path": "payload/hooks/rehydration_schema.py",
+      "sha256": "ba45ff343f23c8a032a971540daccf4e8528082031f04a8a99c00f243fabd51e"
+    },
+    {
+      "bytes": 4456,
+      "path": "payload/hooks/secret-redactor.py",
+      "sha256": "3885da2055b3c3c292e738da92f9edd7be6c134ebb087ef0fbb69d1889faa7f2"
+    },
+    {
+      "bytes": 7027,
+      "path": "payload/hooks/secrets-guard.py",
+      "sha256": "f1760bd3914ea47c3d19898becf3bd6005115499e6c39b11fac1ae6a3fea97cd"
+    },
+    {
+      "bytes": 20857,
+      "path": "payload/hooks/state-snapshot.sh",
+      "sha256": "f03301b3e3e58159f5b3aa9ffbbcca0a26646811ba21914d6223990c9c0ceb87"
+    },
+    {
+      "bytes": 2718,
+      "path": "payload/hooks/subagent-lifecycle.py",
+      "sha256": "507fc8734a3400224d264fd566d213313aa3dba8099972180165c238f627e0b5"
+    },
+    {
+      "bytes": 2839,
+      "path": "payload/hooks/task-lifecycle.py",
+      "sha256": "0fb28103809622a90e7227995bb39f2ff07be8a313e676d39a528c4074808c84"
+    },
+    {
+      "bytes": 3316,
+      "path": "payload/hooks/write-barrier.py",
+      "sha256": "796efa975c2ce734c47174451093686aecf75f733e3e2171a4969d6ab0c7001c"
+    },
+    {
+      "bytes": 2037,
+      "path": "reference/vanilla-claude-code-2.1.138/README.md",
+      "sha256": "9c121f2b01db7f62e3b75e400c8846857b4c32976083ae5a7b2cf6939876c17e"
+    },
+    {
+      "bytes": 1476,
+      "path": "reference/vanilla-claude-code-2.1.138/package.json",
+      "sha256": "6dd94f724ddf39fc9bdc76bcfe4855e475865f6455189c9b987e84fc66aad152"
+    },
+    {
+      "bytes": 3200,
+      "path": "scripts/doctor.py",
+      "sha256": "6c393cb056ac3356df93cf1945fcb0b82c3c216b27dcd05022c56e988dc89487"
+    },
+    {
+      "bytes": 2123,
+      "path": "scripts/package.py",
+      "sha256": "39547ccc01bc7e454d5227fa1fda0c63931d7bf002ac722cc815ca6c3b4ce5cb"
+    },
+    {
+      "bytes": 3588,
+      "path": "templates/settings.fragment.json",
+      "sha256": "72fd38dda61e3fe3a2b3d6f2c43bc8165d04d02812e36e99191bbafcf42b155f"
+    }
+  ],
+  "file_count_excluding_manifest": 28,
+  "generated_at_epoch": 1778358529,
+  "name": "claude_concussion",
+  "total_bytes_excluding_manifest": 179410,
+  "vanilla_baseline": "@anthropic-ai/claude-code"
+}
