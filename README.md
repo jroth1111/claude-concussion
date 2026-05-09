@@ -7,17 +7,17 @@ When Claude Code compacts a long session, it can lose the thread: the active tas
 Claude Concussion adds a barrier. After compaction, Claude has to rebuild its working state from real evidence before it can edit files or give a final answer.
 
 ```text
-       _____ 
-      |     |
-      |_____|  <-- "Rehydration"
-      (     )
-       \   /      
-        \ /          (o) (o)
-         V            ^ ^
-        \_/          \---/
-       /   \         |   |
-      /     \        |   |
-     /       \       |___|
+        *       .       *
+           \    |    /
+            .-""""-.
+          .'  x  x  '.
+         /     __     \
+        |     /  \     |
+        |     \__/     |
+         \            /
+          '._      _.'
+             '--__--'
+          *   dizzy   *
 ```
 
 ## How It Works
