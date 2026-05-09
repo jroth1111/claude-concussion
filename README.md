@@ -4,6 +4,8 @@ Post-compaction recovery hooks for Claude Code.
 
 When Claude Code compacts a long session, it can lose the thread: the active task, the current file state, the last thing you told it not to touch. It comes back sounding confident, but it's working from a summary, not from what actually happened.
 
+**Claude's code compaction feels like it went through a shredder. Half the context just vanishes into the void. Claude compacts code the way airlines handle luggage: technically it arrives, but a lot seems to go missing.**
+
 Claude Concussion adds a barrier. After compaction, Claude has to rebuild its working state from real evidence before it can edit files or give a final answer.
 
 ```text
