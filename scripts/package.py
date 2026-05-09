@@ -27,7 +27,7 @@ def main() -> int:
         rel_parts = path.relative_to(root).parts
         if rel_parts and rel_parts[0] == "dist":
             return False
-        return not any(part in {"__pycache__", ".DS_Store"} for part in rel_parts)
+        return not any(part in {".git", "__pycache__", ".DS_Store"} for part in rel_parts)
 
     entries = []
     for path in sorted(p for p in root.rglob("*") if distributable_file(p)):

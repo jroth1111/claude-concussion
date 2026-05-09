@@ -62,6 +62,34 @@ This package started as a hardened local control layer built on top of `@anthrop
 
 ## Install
 
+### Agent Install
+
+If you are an LLM/coding agent installing this for a user, do the install in this order:
+
+```sh
+git clone https://github.com/jroth1111/claude-concussion.git
+cd claude-concussion
+
+python3 -m py_compile install.py scripts/*.py payload/hooks/*.py
+python3 -m json.tool templates/settings.fragment.json >/dev/null
+
+python3 install.py --dry-run
+python3 install.py
+python3 scripts/doctor.py
+```
+
+Then tell the user to restart Claude Code or start a fresh Claude Code session so the new hook settings are loaded. In the new session, verify hook loading with:
+
+```sh
+claude --debug
+```
+
+or with Claude Code's `/hooks` UI.
+
+Do not copy files by hand unless the installer fails. The installer merges the hook settings, backs up the existing `settings.json`, renders the local Claude home path into the hook commands, and writes an install receipt.
+
+### Manual Install
+
 Dry run:
 
 ```sh

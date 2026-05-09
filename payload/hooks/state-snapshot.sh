@@ -58,7 +58,7 @@ if [ -f "${heartbeat_file}" ]; then
       if [ "${age_h}" -gt 24 ]; then
         echo "### ⚠ hook freshness"
         echo "prior heartbeat is ${age_h}h old — hooks may have been inactive."
-        echo "run ~/.claude/agent-control/check-hooks.sh to verify."
+        echo "run scripts/doctor.py from the Claude Concussion checkout, or inspect Claude Code /hooks, to verify."
       fi
     fi
   fi
@@ -436,7 +436,7 @@ if [ -f "${evidence_file}" ]; then
   echo "### evidence-index: ${evidence_count} entries (${evidence_size}), tail at ${evidence_file}"
 fi
 
-# Layer 1 — heartbeat. Lets check-hooks.sh and Layer-2 self-check detect
+# Layer 1 — heartbeat. Lets the doctor script and Layer-2 self-check detect
 # silent inactivity. Written every snapshot run. Rotates at 5MB to mirror
 # evidence-index hygiene; growth is bounded but not zero.
 mkdir -p "${state_dir}"
