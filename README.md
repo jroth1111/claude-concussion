@@ -6,6 +6,8 @@ When Claude Code compacts a long session, it can lose the thread: the active tas
 
 **Claude's code compaction feels like it went through a shredder. Half the context just vanishes into the void. Claude compacts code the way airlines handle luggage: technically it arrives, but a lot seems to go missing.**
 
+![Claude after compaction — disoriented, missing context, asking the wrong questions](chatgpt-concussion.png)
+
 Claude Concussion adds a barrier. After compaction, Claude has to rebuild its working state from real evidence before it can edit files or give a final answer.
 
 ```text
