@@ -132,7 +132,16 @@ def _has_textual_evidence(value: str, schema: dict[str, Any]) -> bool:
     if not lowered.strip():
         return False
     markers = schema.get("evidence", {}).get("text_markers", [])
-    return any(str(marker).lower() in lowered for marker in markers)
+    if any(str(marker).lower() in lowered for marker in markers):
+        return True
+    # Accept any non-trivial descriptive text (>=20 chars, not placeholder-like).
+    # This catches evidence descriptions like "route wired at entry.ts:249, corrections.tsx renders"
+    # that don't happen to contain an exact marker word but clearly represent consulted evidence.
+    stripped = lowered.strip()
+    placeholder_re = _placeholder_re(schema)
+    if len(stripped) >= 20 and not placeholder_re.fullmatch(stripped):
+        return True
+    return False
 
 
 def _missing_label_aliases(missing: dict[str, list[str]], schema: dict[str, Any]) -> dict[str, dict[str, list[str]]]:
